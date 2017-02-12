@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E9501B62AD55912181AF60CF /* Pods_BuckWheels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF048BEE61A7FCBA833E410 /* Pods_BuckWheels.framework */; };
 		EAEE5FAA1E50CDD5009FADE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEE5FA91E50CDD5009FADE6 /* AppDelegate.swift */; };
 		EAEE5FAC1E50CDD5009FADE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEE5FAB1E50CDD5009FADE6 /* ViewController.swift */; };
 		EAEE5FAF1E50CDD5009FADE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAEE5FAD1E50CDD5009FADE6 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5DF048BEE61A7FCBA833E410 /* Pods_BuckWheels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BuckWheels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9488786FC5A8268A16805100 /* Pods-BuckWheels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuckWheels.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuckWheels/Pods-BuckWheels.release.xcconfig"; sourceTree = "<group>"; };
+		9E3A3F8563EC4D189D8C13FA /* Pods-BuckWheels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuckWheels.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuckWheels/Pods-BuckWheels.debug.xcconfig"; sourceTree = "<group>"; };
 		EAEE5FA61E50CDD5009FADE6 /* BuckWheels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuckWheels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAEE5FA91E50CDD5009FADE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAEE5FAB1E50CDD5009FADE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9501B62AD55912181AF60CF /* Pods_BuckWheels.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		222C6831C2068D086806F00C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DF048BEE61A7FCBA833E410 /* Pods_BuckWheels.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E63FCFEAF46FD353FD082D2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E3A3F8563EC4D189D8C13FA /* Pods-BuckWheels.debug.xcconfig */,
+				9488786FC5A8268A16805100 /* Pods-BuckWheels.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EAEE5F9D1E50CDD5009FADE6 = {
 			isa = PBXGroup;
 			children = (
 				EAEE5FA81E50CDD5009FADE6 /* BuckWheels */,
 				EAEE5FA71E50CDD5009FADE6 /* Products */,
+				E63FCFEAF46FD353FD082D2C /* Pods */,
+				222C6831C2068D086806F00C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAEE5FB81E50CDD5009FADE6 /* Build configuration list for PBXNativeTarget "BuckWheels" */;
 			buildPhases = (
+				64AEA9B7AC709C55020F3EE4 /* [CP] Check Pods Manifest.lock */,
 				EAEE5FA21E50CDD5009FADE6 /* Sources */,
 				EAEE5FA31E50CDD5009FADE6 /* Frameworks */,
 				EAEE5FA41E50CDD5009FADE6 /* Resources */,
+				9AD88DECD352785D5A98B591 /* [CP] Embed Pods Frameworks */,
+				00955D297D12D242A2CE7CF8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00955D297D12D242A2CE7CF8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BuckWheels/Pods-BuckWheels-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64AEA9B7AC709C55020F3EE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9AD88DECD352785D5A98B591 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BuckWheels/Pods-BuckWheels-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EAEE5FA21E50CDD5009FADE6 /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		EAEE5FB91E50CDD5009FADE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E3A3F8563EC4D189D8C13FA /* Pods-BuckWheels.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JE26HLJZLX;
@@ -272,6 +348,7 @@
 		};
 		EAEE5FBA1E50CDD5009FADE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9488786FC5A8268A16805100 /* Pods-BuckWheels.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JE26HLJZLX;
